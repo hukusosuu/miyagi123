@@ -1,0 +1,93 @@
+.news{
+    .container{
+        @include mq(tab){
+            width: 95%;
+            margin: 0 auto;
+        }
+        @include mq(sp){
+            width: 95%;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+.news-items{
+    width: 100%;
+    .container{
+        @include mq(tab){
+            width: 95%;
+            margin: 0 12px;
+        }
+        @include mq(sp){
+            width: 95%;
+            margin: 0 12px;
+        }
+    }
+}
+
+.news-item{
+    display: flex;
+    padding-bottom: 15px;
+    transition: all 0.2s 0s ease;
+    &:hover{
+        opacity: 0.7;
+        transition: all 0.2s 0s ease;
+    }
+    @include mq(tab){
+        display: block;
+    }
+    @include mq(sp){
+        display: block;
+    }
+    &:nth-child(n+2){
+    padding-top: 16px;
+    }
+    border-bottom: 1px solid #ccc;
+}
+
+.news-date{
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 12px;
+    .container{
+        @include mq(tab){
+            margin-left: 0;
+        }
+        @include mq(sp){
+            margin-left: 0;
+        }
+    }
+}
+
+.news-title{
+    margin-left: 14px;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: normal;
+    @include mq(tab){
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    @include mq(sp){
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
+.news-btn{
+    display: block;
+    font-size: 14px;
+    color: $white;
+    text-align: center;
+    line-height: 30px;
+    width: 150px;
+    height: 35px;
+    background-color: $green;
+    margin: 30px auto 69px;
+    transition: all 0.2s 0s ease;
+    &:hover{
+        opacity: 0.7;
+        transition: all 0.2s 0s ease;
+    }
+}

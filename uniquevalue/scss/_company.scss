@@ -1,0 +1,118 @@
+.company{
+    width: 100%;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 70px;
+    .container{
+        @include mq(tab){
+            width: 100%;
+            margin: 0 auto;
+        }
+        @include mq(sp){
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.bg-company{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 600px;
+    z-index: -10;
+    opacity: 0.5;
+    @include mq(tab){
+        height: 700px;
+    }
+    @include mq(sp){
+        height: 700px;
+    }
+}
+
+.company-inner{
+    display: flex;
+    width: 100%;
+    background-color: $white;
+    opacity: 0.85;
+    @include mq(tab){
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+    }
+    @include mq(sp){
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+.company-image{
+    max-width: 216px;
+    margin-top: 72px;
+    margin-left: 100px;
+    @include mq(tab){
+        margin: 10px auto 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    @include mq(sp){
+        margin: 10px auto 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.company-text{
+    width: 570px;
+    margin-left: 100px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    @include mq(tab){
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+    @include mq(sp){
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+    dl{
+        font-size: 14px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+.company-text-item{
+    display: flex;
+    padding-bottom: 11px;
+    &:nth-child(n+2){
+        border-top: 1px solid #ccc;
+        padding-top: 13px;
+        
+    }
+    dt{
+        width: 84px;
+    }
+}
+
+.is-tab{
+@include mq(tab){
+    display: none;
+}
+}
+
+.line-hei{
+    @include mq(pc){
+        line-height: 1.2;
+    }
+    @include mq(pc-tab){
+        line-height: 1.2;
+    }
+    @include mq(sp){
+        line-height: 1.2;
+    }
+}

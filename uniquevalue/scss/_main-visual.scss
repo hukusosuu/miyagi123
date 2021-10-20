@@ -1,0 +1,33 @@
+#bg-video{
+    width: 100%;
+}
+
+.main-visual{
+    position: relative;
+    margin-top: 50px;
+}
+
+.main-visual-title{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    p{
+        color: $white;
+        font-size: 100px;
+        line-height: 100px;
+        font-weight: 900;
+        letter-spacing: normal;
+        @include mq(pc-tab){
+            font-size: 70px;
+        }
+        @include mq(tab){
+            font-size: 50px;
+            line-height: 1.2;
+        }
+        @include mq(sp){
+            font-size: 30px;
+            line-height: 1.1;
+        }
+    }
+}

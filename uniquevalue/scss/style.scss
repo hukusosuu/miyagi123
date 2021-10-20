@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+
+$black:#333;
+$white: #fff;
+$green: #46a053;
+
+
+$font:'Noto Sans JP', sans-serif;
+
+
+
+
+
+$breakpoints: (
+//キー : 値
+'sp': "(max-width: 519px)",
+'tab': "(min-width: 520px) and (max-width: 959px)",
+'pc-tab': "(min-width: 960px) and (max-width: 1239px)",
+'pc': "(min-width: 1240px)"
+) !default;
+
+//メディアクエリ用のmixinを定義。デフォ値はmd
+@mixin mq($breakpoint: sp) {
+    //map-get(マップ型変数, キー)で値を取得
+@media #{map-get($breakpoints, $breakpoint)} {
+        //この中をカスタムできる
+        @content;
+}
+}
+
+
+    @import "common";
+    @import "header";
+    @import "main-visual";
+    @import "service";
+    @import "news";
+    @import "company";
+    @import "contact";
+    @import "footer";
+    @import "archive";
+    @import "single";

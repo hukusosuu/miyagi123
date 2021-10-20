@@ -1,0 +1,59 @@
+
+
+body{
+    font-family: $font;
+    color: $black;
+    overflow-x: hidden;
+}
+
+a{
+    color: $black;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 1030px;
+    margin: 0 auto;
+    width: 80%;
+    @include mq(tab){
+        width: 95%;
+    }
+    @include mq(sp){
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.section-title{
+    text-align: center;
+    margin-top: 85px;
+    @include mq(sp){
+        margin-top: 55px;
+    }
+}
+
+.main-title{
+    display: block;
+    font-size: 32px;
+    padding-bottom: 50px;
+    line-height: 0;
+}
+
+.sub-title{
+    display: block;
+    font-size: 21px;
+    line-height: 0;
+    margin-bottom: 70px;
+    color: $green;
+    @include mq(sp){
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
